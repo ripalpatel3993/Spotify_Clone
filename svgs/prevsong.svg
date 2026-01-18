@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 24 24"
+     width="24"
+     height="24"
+     fill="none"
+     stroke="#141B34"
+     stroke-width="1.5"
+     stroke-linejoin="miter"
+     stroke-linecap="butt">
+
+  <!-- Vertical line -->
+  <path d="M6 4 L6 20" />
+
+  <!-- Left-facing straight triangle -->
+  <path d="M18 5 L8 12 L18 19 Z" />
+</svg>
