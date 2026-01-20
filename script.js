@@ -40,7 +40,7 @@ function timeToPercent(current, total) {
 
 async function getSongs(folder) {
   currFolder = folder;
-  let a = await fetch(`http://127.0.0.1:5500/${folder}/`);
+  let a = await fetch(`https://github.com/ripalpatel3993/Spotify_Clone/tree/main/songs/${folder}/`);
   let response = await a.text();
   // console.log(response)
   let div = document.createElement("div");
@@ -121,7 +121,7 @@ const playMusic = (track, pause = false) => {
 };
 
 async function displayAlbums() {
-  let a = await fetch(`http://127.0.0.1:5500/songs/`);
+  let a = await fetch(`https://github.com/ripalpatel3993/Spotify_Clone/tree/main/songs/`);
   let response = await a.text();
   // console.log(response)
   let div = document.createElement("div");
@@ -139,7 +139,7 @@ async function displayAlbums() {
       // console.log(e.href.split("/").slice(-1)[0]); // carry
       let folder = e.href.split("/").slice(-1)[0];
       // Get the metadata of the folder
-      let a = await fetch(`http://127.0.0.1:5500/songs/${folder}/info.json`);
+      let a = await fetch(`https://github.com/ripalpatel3993/Spotify_Clone/tree/main/songs/${folder}/info.json`);
       let response = await a.json();
       // console.log(response);
       cardContainer.innerHTML =
@@ -188,7 +188,7 @@ async function displayAlbums() {
 
 async function main() {
   //Get the list of all the songs
-  await getSongs("songs/ncs");
+  await getSongs("songs/cs");
   // console.log(songs);
   playMusic(songs[0], true);
 
